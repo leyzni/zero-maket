@@ -1,0 +1,105 @@
+// company - start
+
+.company {
+    width: 100%;
+    height: 100%;
+
+    &__wrap {
+        width: 100%;
+    }
+
+    &__top {
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+
+        @media screen and (max-width:1000px) { 
+            flex-wrap: wrap;
+
+        }
+    }
+
+    &__title {
+        color: #fff;
+        background-color: black;
+        max-width: 300px;
+        margin-top: 150px;
+        margin-bottom: 80px;
+        padding: 10px 25px;
+    }
+
+    &__cards-item {
+        width: 360px;
+        background-color: rgba(0, 0, 0, 0.04);
+
+        img {
+            width: 80%;
+        }
+
+        @media screen and (max-width:1000px) {
+            width: 450px;
+            margin-bottom: 40px;
+        }
+
+        
+        @media screen and (max-width:520px) {
+            width: 330px;
+        }
+    }
+
+    .formargin {
+        margin-bottom: 50px;
+    }
+
+    &__card {
+        margin-right: 20px;
+
+        @media screen and (max-width:1000px) {
+            margin-right: 0;
+        }
+    }
+
+    &__item {
+        margin-left: 35px;
+
+        
+        @media screen and (max-width:520px) {
+         margin-left: 25px;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 125%;
+        text-transform: uppercase;
+        color: #000;
+        margin-left: 35px;
+
+        
+        @media screen and (max-width:520px) {
+            font-size: 15px;
+        }
+    }
+
+    &__bottom {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+.formargin-box {
+    @media screen and (max-width:1000px) {
+        margin-left: 20px;
+    }
+
+    @media  screen  and (max-width:977px) {
+        margin-left: 0  ;
+    }
+}
+
+.for-width {
+    max-width: 556px;
+}
+
+// company - end

@@ -1,0 +1,75 @@
+// header - start
+
+.header {
+    width: 100%;
+
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 25px;
+        margin-left: 30px;
+
+        @media screen and (max-width:668px) {
+            display: none;
+        }
+    }
+
+    &__right {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width:890px) {
+            display: none;
+        }
+    }
+
+    &__menu {
+        display: none;
+
+        @media screen and (max-width:889px) {
+            display: block;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__nav-item {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    &__button-buy {
+        background-color: #000;
+        color: #fff;
+        padding: 15px 26px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #000;
+        }
+    }
+
+}
+
+// header - end
